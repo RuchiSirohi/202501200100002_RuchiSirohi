@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CloudNotes</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>☁️ CloudNotes</h1>
+            <p>Secure. Simple. Cloud-Powered.</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <h2>Your Notes, Anywhere.</h2>
+            <p>
+                Create, manage and access your notes through
+                a highly available cloud-native application.
+            </p>
+        </section>
+
+        <section class="note-form">
+            <h2>Create a Note</h2>
+
+            <input
+                type="text"
+                id="title"
+                placeholder="Note title"
+            >
+
+            <textarea
+                id="content"
+                placeholder="Write your note here..."
+            ></textarea>
+
+            <button onclick="addNote()">Add Note</button>
+        </section>
+
+        <section class="notes-section">
+            <h2>Your Notes</h2>
+
+            <div id="notes-container">
+                <p>Loading notes...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CloudNotes | AWS Cloud-Native Case Study</p>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
